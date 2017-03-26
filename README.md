@@ -10,13 +10,14 @@ You can download from the following site: [Allow-Control-Allow-Origin](https://c
 * Error logging : [Sentry](https://sentry.io/).
 * Local Storage: [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
 
-Note: SecureStorage implementation is available in source code. I couldn't test the application with SecureStorage in browser. Therefore, i used Storage.
+Note: SecureStorage implementation is available in source code. But I couldn't test the application with SecureStorage in browser. Therefore, i used Storage.
 
 
 **Installation**
 
 Before the installation, you need to get apiKey from [Sentry](https://sentry.io/).
 
+Add the SentryApiKey to environment variables
 ```
 export SENTRY_TOKEN=<sentry_token>
 ```
@@ -60,4 +61,4 @@ ionic run android -l -c -s
 ## TODO
 * Solve CORS problem (run application in browser without any plugin)
 * Investigate unit testing with [Karma](https://karma-runner.github.io/).
-* Investigate deployment process (continues integration)
+* Investigate deployment process (improve dev-prod configuration files, continues integration)
