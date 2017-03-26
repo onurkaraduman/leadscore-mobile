@@ -1,0 +1,85 @@
+{
+  "name": "ionic-hello-world",
+  "author": "Ionic Framework",
+  "homepage": "http://ionicframework.com/",
+  "private": true,
+  "scripts": {
+    "dev": "bnr dev",
+    "prod": "bnr prod",
+    "build": "bnr build",
+    "clean": "ionic-app-scripts clean",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve",
+    "lint": "ionic-app-scripts lint",
+    "minify": "ionic-app-scripts minify"
+  },
+  "betterScripts": {
+    "dev": {
+      "command": "ionic serve",
+      "env": {
+        "NODE_ENV": "development",
+        "API_URL": "https://internal-api-staging-lb.interact.io/v2",
+        "PLATFORM": "web"
+      }
+    },
+    "prod": {
+      "command": "ionic serve",
+      "env": {
+        "NODE_ENV": "development",
+        "API_URL": "https://internal-api-staging-lb.interact.io/v2",
+        "PLATFORM": "web"
+      }
+    },
+    "build": {
+      "command": "ionic-app-scripts build --rollup ./config/rollup.config.js",
+      "env": {
+        "NODE_ENV": "production",
+        "API_URL": "https://internal-api-staging-lb.interact.io/v2",
+        "PLATFORM": "web"
+      }
+    }
+  },
+  "dependencies": {
+    "@angular/common": "2.4.8",
+    "@angular/compiler": "2.4.8",
+    "@angular/compiler-cli": "2.4.8",
+    "@angular/core": "2.4.8",
+    "@angular/forms": "2.4.8",
+    "@angular/http": "2.4.8",
+    "@angular/platform-browser": "2.4.8",
+    "@angular/platform-browser-dynamic": "2.4.8",
+    "@angular/platform-server": "2.4.8",
+    "@ionic-native/core": "3.1.0",
+    "@ionic-native/secure-storage": "^3.2.3",
+    "@ionic-native/splash-screen": "3.1.0",
+    "@ionic-native/status-bar": "3.1.0",
+    "@ionic/storage": "2.0.0",
+    "angular2-jwt": "^0.1.28",
+    "better-npm-run": "0.0.15",
+    "ionic-angular": "2.3.0",
+    "ionicons": "3.0.0",
+    "raven-js": "^3.13.1",
+    "rxjs": "5.0.1",
+    "sw-toolbox": "3.4.0",
+    "zone.js": "0.7.2"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "1.1.4",
+    "@types/node": "^7.0.11",
+    "rollup-plugin-replace": "^1.1.1",
+    "typescript": "2.0.9"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-console",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device",
+    "cordova-plugin-splashscreen",
+    "ionic-plugin-keyboard"
+  ],
+  "cordovaPlatforms": [],
+  "description": "leadscore-mobile: An Ionic project",
+  "config": {
+    "ionic_rollup": "./config/rollup.config.js"
+  }
+}

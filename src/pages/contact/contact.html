@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+    <button ion-button color="danger" (click)="logout()" item-right>Logout</button>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let contact of contacts">
+      <ion-thumbnail item-left>
+        <img [src]="contact?.profilePicture? contact.profilePicture:'assets/icon/contactProfile.png' ">
+      </ion-thumbnail>
+      <h2>{{contact.displayName}}</h2>
+      <p>
+        <template ngFor #email [ngForOf]="contact.emails">
+          {{email.name}}
+          <template>,</template>
+        </template>
+        <template *ngIf="contact.phoneNumber">• {{contact.phoneNumber}}</template>
+      </p>
+      <button clear item-right>View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
