@@ -5,6 +5,8 @@ This project is a sample of leadscore.io mobile app based on Ionic2.
 There is a CORS problem with backend api. I used google chrome extension to test the application in browser.
 You can download from the following site: [Allow-Control-Allow-Origin](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi/reviews).
 
+In addition, i couldn't implement angular2-jwt with backend api. I must have missed some configuration.
+
 **Technology Stack**
 
 * Error logging : [Sentry](https://sentry.io/).
