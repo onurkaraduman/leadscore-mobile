@@ -61,6 +61,7 @@ ionic run android -l -c -s
 ```
 
 ## TODO
+* Improve the exception handling
 * Solve CORS problem (run application in browser without any plugin)
 * Investigate unit testing with [Karma](https://karma-runner.github.io/).
 * Investigate deployment process (improve dev-prod configuration files, continues integration)
